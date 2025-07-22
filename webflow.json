@@ -1,0 +1,7 @@
+{
+  "name": "Zazz Webflow App",
+  "publicDir": "dist",
+  "main": "index.js",
+  "size": "comfortable",
+  "apiVersion": "2"
+}

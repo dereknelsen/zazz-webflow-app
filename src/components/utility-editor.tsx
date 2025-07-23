@@ -22,7 +22,6 @@ export function UtilityEditor() {
       if (element.type === "DOM") {
         const getElementClasses = async () => {
           const classAttr = await element.getAttribute("class");
-          console.log("classAttr", classAttr);
           if (classAttr && classAttr.trim().length > 0) {
             setUtilityStyles(classAttr.trim().split(/\s+/).filter(Boolean));
           } else {
@@ -33,7 +32,6 @@ export function UtilityEditor() {
       } else if (element && element.customAttributes) {
         const getElementClasses = async () => {
           const classAttr = await element.getCustomAttribute("class");
-          console.log("classAttr", classAttr);
           if (classAttr && classAttr.trim().length > 0) {
             setUtilityStyles(classAttr.trim().split(/\s+/).filter(Boolean));
           } else {
